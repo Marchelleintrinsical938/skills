@@ -1,0 +1,30 @@
+name: "test: jobnet-search"
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - "skills/jobnet-search/**"
+  pull_request:
+    branches: [main]
+    paths:
+      - "skills/jobnet-search/**"
+  workflow_dispatch:
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: oven-sh/setup-bun@v2
+        with:
+          bun-version: latest
+
+      - name: Install dependencies
+        working-directory: skills/jobnet-search/cli
+        run: bun install
+
+      - name: Run tests
+        working-directory: skills/jobnet-search/cli
+        run: bun test

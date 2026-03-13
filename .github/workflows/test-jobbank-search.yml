@@ -1,0 +1,30 @@
+name: "test: jobbank-search"
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - "skills/jobbank-search/**"
+  pull_request:
+    branches: [main]
+    paths:
+      - "skills/jobbank-search/**"
+  workflow_dispatch:
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: oven-sh/setup-bun@v2
+        with:
+          bun-version: latest
+
+      - name: Install dependencies
+        working-directory: skills/jobbank-search/cli
+        run: bun install
+
+      - name: Run tests
+        working-directory: skills/jobbank-search/cli
+        run: bun test

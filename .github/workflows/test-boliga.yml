@@ -1,0 +1,30 @@
+name: "test: boliga"
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - "skills/boliga/**"
+  pull_request:
+    branches: [main]
+    paths:
+      - "skills/boliga/**"
+  workflow_dispatch:
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: oven-sh/setup-bun@v2
+        with:
+          bun-version: latest
+
+      - name: Install dependencies
+        working-directory: skills/boliga/cli
+        run: bun install
+
+      - name: Run tests
+        working-directory: skills/boliga/cli
+        run: bun test

@@ -1,0 +1,30 @@
+name: "test: boligsiden"
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - "skills/boligsiden/**"
+  pull_request:
+    branches: [main]
+    paths:
+      - "skills/boligsiden/**"
+  workflow_dispatch:
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: oven-sh/setup-bun@v2
+        with:
+          bun-version: latest
+
+      - name: Install dependencies
+        working-directory: skills/boligsiden/cli
+        run: bun install
+
+      - name: Run tests
+        working-directory: skills/boligsiden/cli
+        run: bun test
