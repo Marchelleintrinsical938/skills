@@ -4,9 +4,9 @@
   <img src="assets/banner.gif" alt="Agent Skills" width="640">
 </p>
 
-A curated collection of agent skills that give your AI agent direct access to live data through purpose-built CLIs. Framework agnostic — works with any agent that supports skills.
+Agent skills that help people navigate everyday life in Denmark — finding a home, landing a job, saving on groceries, checking the weather, planning a trip, or looking up health information. Each skill connects your AI agent to real Danish data sources so it can give answers grounded in live data, not guesswork.
 
-Contributions are welcome!
+Framework agnostic. Contributions welcome.
 
 ## Available Skills
 
