@@ -12,25 +12,25 @@ Contributions are welcome!
 
 ### Danish Job Search
 
-**jobindex-search** ![tests](https://github.com/mikkelkrogsholm/skills/actions/workflows/test-jobindex-search.yml/badge.svg) — Search live job listings from [Jobindex.dk](https://jobindex.dk) — Denmark's largest job portal
+**jobindex-search** ![tests](assets/badges/jobindex-search.svg) — Search live job listings from [Jobindex.dk](https://jobindex.dk) — Denmark's largest job portal
 
 ```bash
 npx skills add https://github.com/mikkelkrogsholm/skills --skill jobindex-search
 ```
 
-**jobnet-search** ![tests](https://github.com/mikkelkrogsholm/skills/actions/workflows/test-jobnet-search.yml/badge.svg) — Search job listings from [Jobnet.dk](https://jobnet.dk) — the public employment service
+**jobnet-search** ![tests](assets/badges/jobnet-search.svg) — Search job listings from [Jobnet.dk](https://jobnet.dk) — the public employment service
 
 ```bash
 npx skills add https://github.com/mikkelkrogsholm/skills --skill jobnet-search
 ```
 
-**jobdanmark-search** ![tests](https://github.com/mikkelkrogsholm/skills/actions/workflows/test-jobdanmark-search.yml/badge.svg) — Search job listings from [Jobdanmark.dk](https://jobdanmark.dk)
+**jobdanmark-search** ![tests](assets/badges/jobdanmark-search.svg) — Search job listings from [Jobdanmark.dk](https://jobdanmark.dk)
 
 ```bash
 npx skills add https://github.com/mikkelkrogsholm/skills --skill jobdanmark-search
 ```
 
-**jobbank-search** ![tests](https://github.com/mikkelkrogsholm/skills/actions/workflows/test-jobbank-search.yml/badge.svg) — Search job listings from [Akademikernes Jobbank](https://jobbank.dk) — portal for highly educated candidates
+**jobbank-search** ![tests](assets/badges/jobbank-search.svg) — Search job listings from [Akademikernes Jobbank](https://jobbank.dk) — portal for highly educated candidates
 
 ```bash
 npx skills add https://github.com/mikkelkrogsholm/skills --skill jobbank-search
@@ -38,13 +38,13 @@ npx skills add https://github.com/mikkelkrogsholm/skills --skill jobbank-search
 
 ### Danish Property Market
 
-**boliga** ![tests](https://github.com/mikkelkrogsholm/skills/actions/workflows/test-boliga.yml/badge.svg) — Property data from [Boliga.dk](https://boliga.dk) — sales history, listings, and price statistics
+**boliga** ![tests](assets/badges/boliga.svg) — Property data from [Boliga.dk](https://boliga.dk) — sales history, listings, and price statistics
 
 ```bash
 npx skills add https://github.com/mikkelkrogsholm/skills --skill boliga
 ```
 
-**boligsiden** ![tests](https://github.com/mikkelkrogsholm/skills/actions/workflows/test-boligsiden.yml/badge.svg) — Property data from [Boligsiden.dk](https://boligsiden.dk) — listings, sales, and market stats
+**boligsiden** ![tests](assets/badges/boligsiden.svg) — Property data from [Boligsiden.dk](https://boligsiden.dk) — listings, sales, and market stats
 
 ```bash
 npx skills add https://github.com/mikkelkrogsholm/skills --skill boligsiden
@@ -52,13 +52,13 @@ npx skills add https://github.com/mikkelkrogsholm/skills --skill boligsiden
 
 ### Biomedical Research
 
-**pubmed-database** ![tests](https://github.com/mikkelkrogsholm/skills/actions/workflows/test-pubmed-database.yml/badge.svg) — Search 35M+ citations from PubMed/MEDLINE via the NCBI E-utilities API
+**pubmed-database** ![tests](assets/badges/pubmed-database.svg) — Search 35M+ citations from PubMed/MEDLINE via the NCBI E-utilities API
 
 ```bash
 npx skills add https://github.com/mikkelkrogsholm/skills --skill pubmed-database
 ```
 
-**medrxiv-search** ![tests](https://github.com/mikkelkrogsholm/skills/actions/workflows/test-medrxiv-search.yml/badge.svg) — Search medical preprints from medRxiv across 51 subject categories
+**medrxiv-search** ![tests](assets/badges/medrxiv-search.svg) — Search medical preprints from medRxiv across 51 subject categories
 
 ```bash
 npx skills add https://github.com/mikkelkrogsholm/skills --skill medrxiv-search
