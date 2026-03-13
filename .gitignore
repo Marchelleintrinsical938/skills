@@ -8,5 +8,7 @@ bun.lock
 # OS
 .DS_Store
 
-# Claude memory (local only)
-.claude/
+# Claude local data (memory, settings)
+.claude/*
+# Keep skill symlinks (point to .agents/skills/)
+!.claude/skills/

@@ -2,6 +2,20 @@
 
 Thanks for your interest in contributing! Here's how to get started.
 
+## Finding Work
+
+Check the [issue tracker](https://github.com/mikkelkrogsholm/skills/issues) for skills that need building. Issues are labeled with status:
+
+| Label | Meaning |
+|-------|---------|
+| `status: pending` | Not started — up for grabs |
+| `status: in-progress` | Someone is working on it |
+| `status: done` | Built, tested, and pushed |
+| `status: deferred` | Too hard right now, revisit later |
+| `status: dropped` | Not worth building |
+
+Pick any `status: pending` issue, comment that you're taking it, and start building!
+
 ## Adding a New Skill
 
 Each skill is a self-contained folder under `skills/` with its own CLI bundled inside:

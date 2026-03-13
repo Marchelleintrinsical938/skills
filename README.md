@@ -64,6 +64,10 @@ npx skills add https://github.com/mikkelkrogsholm/skills --skill pubmed-database
 npx skills add https://github.com/mikkelkrogsholm/skills --skill medrxiv-search
 ```
 
+## Want a New Skill?
+
+Check the [open issues](https://github.com/mikkelkrogsholm/skills/issues?q=is%3Aissue+label%3A%22new+skill%22) to see what's planned, in progress, or up for grabs. Feel free to open a new issue to suggest a data source!
+
 ## Requirements
 
 - [Bun](https://bun.sh) runtime
