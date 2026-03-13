@@ -1,0 +1,47 @@
+{
+  "version": 1,
+  "skills": {
+    "agent-browser": {
+      "source": "vercel-labs/agent-browser",
+      "sourceType": "github",
+      "computedHash": "46eddb8bcb7de8e7c75ff53ee54bf764a576a923d19765b4ef6a71bb04755db6"
+    },
+    "skill-creator": {
+      "source": "anthropics/skills",
+      "sourceType": "github",
+      "computedHash": "b122f4d1e91aa1d83027e050b5b37c3156203ee85458d7b1360bc48167c9e02a"
+    },
+    "boligsiden": {
+      "source": "skills/boligsiden/SKILL.md",
+      "sourceType": "local"
+    },
+    "boliga": {
+      "source": "skills/boliga/SKILL.md",
+      "sourceType": "local"
+    },
+    "jobnet-search": {
+      "source": "skills/jobnet-search/SKILL.md",
+      "sourceType": "local"
+    },
+    "jobdanmark-search": {
+      "source": "skills/jobdanmark-search/SKILL.md",
+      "sourceType": "local"
+    },
+    "jobindex-search": {
+      "source": "skills/jobindex-search/SKILL.md",
+      "sourceType": "local"
+    },
+    "jobbank-search": {
+      "source": "skills/jobbank-search/SKILL.md",
+      "sourceType": "local"
+    },
+    "medrxiv-search": {
+      "source": "skills/medrxiv-search/SKILL.md",
+      "sourceType": "local"
+    },
+    "pubmed-database": {
+      "source": "skills/pubmed-database/SKILL.md",
+      "sourceType": "local"
+    }
+  }
+}

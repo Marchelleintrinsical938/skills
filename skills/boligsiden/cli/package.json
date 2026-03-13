@@ -1,0 +1,24 @@
+{
+  "name": "boligsiden-cli",
+  "version": "1.0.0",
+  "description": "CLI for the Boligsiden.dk public property API",
+  "type": "module",
+  "main": "src/cli.ts",
+  "bin": {
+    "boligsiden": "src/cli.ts"
+  },
+  "scripts": {
+    "start": "bun run src/cli.ts",
+    "test": "bun test",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@bunli/core": "latest",
+    "@bunli/utils": "latest",
+    "zod": "^3.23.0"
+  },
+  "devDependencies": {
+    "typescript": "^5.4.0",
+    "@types/bun": "latest"
+  }
+}

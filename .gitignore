@@ -1,0 +1,12 @@
+# Research findings (temporary, per-skill)
+research/
+
+# Dependencies
+node_modules/
+bun.lock
+
+# OS
+.DS_Store
+
+# Claude memory (local only)
+.claude/
