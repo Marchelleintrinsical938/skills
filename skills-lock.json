@@ -42,6 +42,10 @@
     "pubmed-database": {
       "source": "skills/pubmed-database/SKILL.md",
       "sourceType": "local"
+    },
+    "salling-food-waste": {
+      "source": "skills/salling-food-waste/SKILL.md",
+      "sourceType": "local"
     }
   }
 }

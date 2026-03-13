@@ -50,6 +50,14 @@ npx skills add https://github.com/mikkelkrogsholm/skills --skill boliga
 npx skills add https://github.com/mikkelkrogsholm/skills --skill boligsiden
 ```
 
+### Danish Food & Groceries
+
+**salling-food-waste** ![tests](assets/badges/salling-food-waste.svg) — Find discounted food waste items at Netto, føtex, and Bilka via the [Salling Group API](https://developer.sallinggroup.com)
+
+```bash
+npx skills add https://github.com/mikkelkrogsholm/skills --skill salling-food-waste
+```
+
 ### Biomedical Research
 
 **pubmed-database** ![tests](assets/badges/pubmed-database.svg) — Search 35M+ citations from PubMed/MEDLINE via the NCBI E-utilities API

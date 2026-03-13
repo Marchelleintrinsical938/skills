@@ -16,6 +16,25 @@ Check the [issue tracker](https://github.com/mikkelkrogsholm/skills/issues) for 
 
 Pick any `status: pending` issue, comment that you're taking it, and start building!
 
+## Suggesting a New Skill
+
+Use the GitHub `New skill` issue form when proposing a new data source or user problem to support.
+
+A good issue starts from the human task first, not the API:
+
+- What would a person in Denmark go online to figure out?
+- Which website or data source do they actually use?
+- Can an agent access that information through an API, hidden frontend data, HTML, or documents?
+
+Strong issues include:
+
+- the real user problem
+- the primary website and any secondary sources
+- the likely access method
+- the actions the future agent should support
+- the expected output and why it matters
+- any early notes about auth, bot protection, or data quality
+
 ## Adding a New Skill
 
 Each skill is a self-contained folder under `skills/` with its own CLI bundled inside:

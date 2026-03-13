@@ -58,7 +58,12 @@ run_skill_test() {
   echo "$pass $((pass + fail))" > "$TEMP_DIR/$skill.txt"
 }
 
-SKILLS=(boliga boligsiden jobbank-search jobdanmark-search jobindex-search jobnet-search medrxiv-search pubmed-database)
+# Auto-discover skills that have a cli/tests directory
+SKILLS=()
+for dir in skills/*/cli/tests; do
+  skill=$(echo "$dir" | cut -d/ -f2)
+  SKILLS+=("$skill")
+done
 
 echo "Running tests in parallel..."
 

@@ -1,0 +1,24 @@
+{
+  "name": "salling-food-waste-cli",
+  "version": "1.0.0",
+  "description": "CLI for finding discounted food waste items at Salling Group stores via the Salling Group API",
+  "type": "module",
+  "main": "src/cli.ts",
+  "bin": {
+    "salling-food-waste": "src/cli.ts"
+  },
+  "scripts": {
+    "start": "bun run src/cli.ts",
+    "test": "bun test --timeout 30000",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@bunli/core": "latest",
+    "@bunli/utils": "latest",
+    "zod": "^3.23.0"
+  },
+  "devDependencies": {
+    "typescript": "^5.4.0",
+    "@types/bun": "latest"
+  }
+}
