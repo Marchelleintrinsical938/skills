@@ -46,6 +46,10 @@
     "salling-food-waste": {
       "source": "skills/salling-food-waste/SKILL.md",
       "sourceType": "local"
+    },
+    "rejseplanen": {
+      "source": "skills/rejseplanen/SKILL.md",
+      "sourceType": "local"
     }
   }
 }
